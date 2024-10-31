@@ -1,81 +1,97 @@
-**EasyBank: Financial Management System**
-EasyBank is a desktop banking application developed in Java, featuring SQL database integration to provide users with a streamlined platform for managing financial transactions. It includes essential banking functionalities such as account creation, fund transfer, bill payments, and downloadable mini statements in PDF format.
+# **EasyBank: Financial Management System**
 
-**Table of Contents**
-Overview
-Features
-Technology Stack
-Getting Started
-Usage
-Configuration
-Contact
+EasyBank is a desktop banking application developed in Java, integrating a SQL database to provide users with a streamlined platform for managing financial transactions. It offers essential banking functionalities such as account creation, fund transfers, bill payments, and downloadable mini-statements in PDF format.
+
+## **Table of Contents**
+1. Overview
+2. Features
+3. Technology Stack
+4. Getting Started
+5. Usage
+6. Configuration
+7. Contact
+
+## **1. Overview**
+
+EasyBank is designed to be an accessible and user-friendly financial management system, catering to individuals or small businesses needing basic banking operations. It is developed using Java (Swing) for the front-end and MySQL for the back-end, offering functionalities such as account management, transaction history tracking, and the ability to download transaction summaries in PDF format.
+
+### **Key Highlights:**
+- **Intuitive Interface**: Built using Java (Swing), providing a seamless user experience.
+- **SQL Database Integration**: Powered by MySQL for secure data handling.
+- **Auto-Generated Account Numbers**: Simplifies the onboarding process for new users.
+- **Profile Customization**: Users can change their login password directly from the dashboard.
+
+## **2. Features**
+
+- **Create Savings/Current Account**: Users can open savings or current accounts as per their requirements.
+- **Multiuser Login**: Supports multiple user profiles with personalized dashboards.
+- **Profile Dashboard**: Displays user-specific account details and actions.
+- **Fund Transfer and Bill Payments**: Users can easily transfer funds and pay bills through the application.
+- **Change Password**: Users can update their login credentials securely.
+- **Download Mini Statement**: Transaction history is available for download in PDF format.
+- **Application Forms**: Users can apply for debit/credit cards or loans directly from their profile.
+
+## **3. Technology Stack**
+
+- **Frontend**: Java (Swing)
+- **Backend**: MySQL
+- **Database Connectivity**: JDBC (Java Database Connectivity)
+- **IDE**: NetBeans
+- **JAR Files**:
+  - `itextpdf-5.5.13`: For generating PDF statements.
+  - `javax.mail`: For email functionalities (if needed).
+  - `mysql-connector-j-9.0.0`: For connecting to MySQL database.
+  - `rs2xml`: For handling result set transformations.
 
 
-**Overview**
-EasyBank is designed to be an accessible and straightforward financial management system, suitable for individuals or small businesses needing basic banking operations. Developed using Java (Swing) for the frontend and MySQL as the backend database, it provides functionalities such as account management, transaction history tracking, and the ability to download transaction summaries in PDF format.
+## **4. Getting Started**
 
-**Key Highlights**
-Intuitive interface built using Java (Swing)
-SQL database (MySQL) integration
-Auto-generated account numbers for streamlined onboarding
-Supports profile customization with password change capability
+### **Prerequisites**
+- Java Development Kit (JDK) 8 or higher
+- NetBeans IDE
+- MySQL Server for database setup and management
 
-**Features**
-Create Savings/Current Account: Users can create savings or current accounts.
-Multiuser Login: Supports multiple user logins with personalized profiles.
-Profile Dashboard: Displays user-specific account details and options.
-Fund Transfer and Bill Payments: Users can transfer funds and pay bills.
-Change Password: Allows users to update their login password.
-Download Mini Statement: Transaction history available as a downloadable PDF.
-Application Forms: Users can apply for debit cards, credit cards, and loans.
+### **Installation Steps**
 
-**Technology Stack**
-Frontend: Java (Swing)
-Backend: MySQL
-Connectivity: JDBC (Java Database Connectivity)
-IDE: NetBeans
-JAR Files:
-itextpdf-5.5.13: For generating PDF statements.
-javax.mail: For email functionalities (if any).
-mysql-connector-j-9.0.0: For MySQL database connection.
-rs2xml: For result set transformations.
+1. **Clone the Repository**  
+   ```
+   git clone https://github.com/your-username/EasyBank-Financial-Management-System.git
+   ```
 
-**Getting Started**
-Prerequisites
-Java Development Kit (JDK) 8 or higher
-NetBeans IDE
-MySQL Server: For database setup and management.
+2. **Set Up Database**  
+   Import the provided SQL file into your MySQL server to set up the required tables and initial data.
 
-**Installation**
-Clone the Repository
-git clone https://github.com/your-username/EasyBank-Financial-Management-System.git
+3. **Configure Database Connectivity**  
+   Update the database connection settings in the JDBC configuration file to match your MySQL server details.
 
-Set Up Database
-Import the provided SQL file into your MySQL database to set up tables and initial data.
+4. **Install Required JAR Files**  
+   Add the necessary JAR files (itextpdf-5.5.13, javax.mail, mysql-connector-j-9.0.0, rs2xml) to your project libraries in NetBeans.
 
-Configure Database Connectivity
-Update database connection settings in the JDBC configuration file to match your MySQL setup.
+5. **Run the Project**  
+   Open the project in NetBeans, and run the `Main` class to start EasyBank.
 
-Install Required JAR Files
-Add the necessary JAR files (itextpdf-5.5.13, javax.mail, mysql-connector-j-9.0.0, rs2xml) to the project libraries in NetBeans.
 
-Run the Project
-Open the project in NetBeans and run the Main class to start EasyBank.
+## **5. Usage**
 
-**Usage**
-Login: Use the multiuser login feature to sign in with your credentials.
-Create Account: Select savings or current account options to open a new account.
-Dashboard: Access your account details, transaction history, and application forms.
-Fund Transfer/Bill Payment: Transfer funds or pay bills directly from your account.
-Download Mini Statement: Download recent transaction history in PDF format.
-Apply for Card/Loan: Use the application forms for debit/credit card or loan requests.
+- **Login**: Use the multiuser login feature to sign in with your credentials.
+- **Create Account**: Choose between savings or current accounts to create a new account.
+- **Dashboard**: View your account details, check transaction history, and access application forms.
+- **Fund Transfer/Bill Payment**: Transfer funds or pay bills directly from your account.
+- **Download Mini Statement**: Generate and download your recent transaction history as a PDF.
+- **Apply for Card/Loan**: Submit application forms for debit/credit cards or loans through the platform.
 
-**Configuration**
-Database Configuration: Update dbConfig.java with your MySQL database URL, username, and password.
-Environment Variables:
-DB_USERNAME: Set your MySQL username.
-DB_PASSWORD: Set your MySQL password.
 
-**Contact**
-GitHub: **Nishhh3**
-Email: **nishantwrkchauhan05@gmail.com**
+## **6. Configuration**
+
+### **Database Configuration**
+Update the `dbConfig.java` file with your MySQL database details:
+- **DB_USERNAME**: Your MySQL username
+- **DB_PASSWORD**: Your MySQL password
+
+Ensure these values are correctly set for a seamless database connection.
+
+
+## **7. Contact**
+
+- **GitHub**: [Nishhh3](https://github.com/your-username)
+- **Email**: [nishantwrkchauhan05@gmail.com](mailto:nishantwrkchauhan05@gmail.com)
